@@ -1,0 +1,4 @@
+langchain>=1.4
+langchain-core>=1.6
+langchain-text-splitters>=1.1
+langchain-openai>=1.6
