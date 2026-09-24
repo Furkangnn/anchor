@@ -4,6 +4,16 @@ A LangChain RAG chain. It splits a small handbook, embeds the chunks, retrieves 
 
 Without `OPENAI_API_KEY`, the same chain uses a local embedding and `GroundedChat`. With the key set, those two pieces become `OpenAIEmbeddings` and `ChatOpenAI`. The prompt, the splitter, and the retriever stay put.
 
+## What an answer looks like
+
+A question about refunds comes back with the five-day rule and the `[Refunds]` note. The three retrieved chunks sit under it.
+
+![A cited answer and the chunks Anchor retrieved](./docs/cited.png)
+
+A question the handbook never answers is refused. The chunks can still be nearby. The model does not use them to invent a lunch.
+
+![A refusal when the documents do not contain the fact](./docs/refused.png)
+
 ## Ask
 
 ```bash
