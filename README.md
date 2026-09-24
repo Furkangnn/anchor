@@ -8,11 +8,11 @@ Without `OPENAI_API_KEY`, the same chain uses a local embedding and `GroundedCha
 
 A question about refunds comes back with the five-day rule and the `[Refunds]` note. The three retrieved chunks sit under it.
 
-![A cited answer and the chunks Anchor retrieved](./docs/cited.png)
+![The refund answer, with the handbook notes beside it](./docs/cited-note.png)
 
 A question the handbook never answers is refused. The chunks can still be nearby. The model does not use them to invent a lunch.
 
-![A refusal when the documents do not contain the fact](./docs/refused.png)
+![A question the handbook does not answer](./docs/refused-note.png)
 
 ## Ask
 
